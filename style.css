@@ -65,7 +65,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--bg-color);
 }
 .logo span {
     color: var(--second-color);
@@ -97,4 +97,8 @@ header {
 }
 .home-title {
     font-size: 3.5rem;
+}
+.home-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
 }
