@@ -115,11 +115,10 @@ header {
     border: 1px solid var(--second-color);
     border-radius: 4px;
     margin: 0 8px;
-    cursor: pointer;
     transition: background 0.3s; */
+    cursor: pointer;
     font-size: 0.9rem;
     font-weight: 500;
-    cursor: pointer;
 }
 .filter-item:hover {
     background: var(--second-color);
@@ -131,6 +130,7 @@ header {
     padding: 4px 10px;
     border-radius: 4px;
 }
+
 /* Posts */
 .post {
     display: grid;
@@ -143,4 +143,60 @@ header {
     box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
     padding: 15px;
     border-radius: 0.5rem;
+}
+.post-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    object-position: center;
+}
+.category {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+.post-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* Standard property for multi-line truncation */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 3.2rem;
+    word-break: break-word;
+}
+.post-date {
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 4px
+}
+.post-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 5px 0 10px;
+    /* To Remain Title In 3 Lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
 }
