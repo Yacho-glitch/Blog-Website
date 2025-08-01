@@ -102,3 +102,27 @@ header {
     font-size: 1rem;
     font-weight: 400;
 }
+/* Post Filter */
+.post-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+.filter-item {
+    padding: 12px 16px;
+    border: 1px solid var(--second-color);
+    border-radius: 4px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.filter-item:hover {
+    background: var(--second-color);
+    color: var(--bg-color);
+}
+.active-filter {
+    background: var(--second-color);
+    color: var(--bg-color);
+}
